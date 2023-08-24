@@ -32,7 +32,7 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
   }
 
   function showUserData(userData) {
-    document.querySelector("h4").style.display = 'none';
+    document.querySelector("h4").style.display = "none";
     document.getElementById("login-form").style.display = "none";
     document.getElementById("cracha").style.display = "block";
     document.getElementById("id").innerText = userData.id;
@@ -46,6 +46,7 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
 
 
   function closeUserData() {
+    document.querySelector("h4").style.display = "";
     document.getElementById("login-form").style.display = "";
     document.getElementById("cracha").style.display = "none";
   }
