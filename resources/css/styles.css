@@ -22,8 +22,14 @@ body{
     padding: 22px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
 
+  }
+.login-container .login-message{
+  color: rgb(22, 11, 116);
+  font-size: x-small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
   button {
     background-color: #3F9CC8ff;
     color: #fff;
@@ -49,3 +55,8 @@ body{
   .imgHeader{
     width: 110px;
   }
+
+.userImage{
+  padding:1px;
+  border:1px solid #021a40;
+}

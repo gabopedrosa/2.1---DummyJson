@@ -10,25 +10,48 @@
     <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body>
-    <div>
-
-    </div>
+</body>
     <div class="login-container">
         <h4>DummyJSON</h4>
+
         <form id="login-form">
             <label for="username">Username</label>
-            <input type="text" id="username" placeholder="kminchelle" required>
+            <input type="text" id="username" value="kminchelle" required>
             
             <label for="password">Senha</label>
-            <input type="password" id="password" placeholder="0lelplR" required>
+            <input type="password" id="password" value="0lelplR" required>
             
-            <button type="submit" id="button" onclick="">Logar</button>
-            <br />
+            <button type="submit" id="button">Logar</button>
+            <a href="https://dummyjson.com/users" style="color: black;"><p class="login-message" id="login-message">Usuários válidos aqui</p></a>
             <img src="./resources/img/logo_colorida.png" class="imgHeader">
             <p class="subtitle">© Diamond Solutions - 2023 <br/> Gabriel Pedrosa</p>
-            
         </form>
+
+
+        <div id="cracha" style="display: none;">
+            <div>
+                <h3>Card de Identificação</h3>
+            </div>
+            <div>
+                <div>
+                    <img id="userImage" class="userImage">
+                </div>
+                <div id="cracha-info">
+                    <p><strong>ID:</strong> <span id="id"></span></p>
+                    <p><strong>Username:</strong> <span id="user"></span></p>
+                    <p><strong>Nome:</strong> <span id="nome"></span></p>
+                    <p><strong>Sobrenome:</strong> <span id="sobrenome"></span></p>
+                    <br /> <br />
+                    <p>Email: <span id="email"></span></p>
+                    <p>Gênero: <span id="genero"></span></p>
+                    <input type="button" value="Tela inicial" onclick="closeUserData()">
+            </div>
+        </div>
+        <img src="./resources/img/logo_colorida.png" class="imgHeader">
+        <p class="subtitle">© Diamond Solutions - 2023 <br/> Gabriel Pedrosa</p>
     </div>
+
+
+
     <script src="./resources/js/script.js"></script>
-</body>
 </html>
